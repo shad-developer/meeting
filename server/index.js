@@ -18,7 +18,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 // Allowed origins: in prod use the Render URL, in dev use localhost
 const allowedOrigins = isProduction
   ? [process.env.CLIENT_URL].filter(Boolean)
-  : ['http://localhost:3000'];
+  : ['https://meeting-rhr9.onrender.com'];
 
 // Socket.io setup
 const io = new Server(server, {
