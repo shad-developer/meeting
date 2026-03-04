@@ -4,7 +4,7 @@ import { useAuth } from './AuthContext';
 
 const SocketContext = createContext(null);
 
-const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
+const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'https://meeting-rhr9.onrender.com';
 
 export const SocketProvider = ({ children }) => {
   const { token } = useAuth();
