@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const AuthContext = createContext(null);
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.REACT_APP_API_URL || 'https://meeting-rhr9.onrender.com/api';
 
 // Axios instance
 export const api = axios.create({ baseURL: API_URL });
